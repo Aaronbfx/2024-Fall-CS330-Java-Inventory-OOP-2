@@ -124,7 +124,7 @@ public class Consumable extends Item {
 
         Consumable rhsItem = (Consumable) rhs;
 
-        return this.name == rhsItem.name && this.effect == rhsItem.effect;
+        return this.name.equals(rhsItem.name) && this.effect.equals(rhsItem.effect);
     }
 
     /**
